@@ -19,3 +19,9 @@ class MessageSerializer(ModelSerializer):
     class Meta:
         model = Message
         fields = '__all__'
+
+
+class MessagePostSerializer(ModelSerializer):
+    class Meta:
+        model = Message
+        fields = ('id', 'chat', 'message')
